@@ -1,6 +1,6 @@
 remote-logger
 =============
-A quick and dirty solution for logging in difficult situations like the capturing of raw request payloads from an API sitting in a container behind a large-cloud provider's load balancer.
+A quick and dirty solution for logging in difficult situations like the capturing of raw request payloads from an API sitting in a container behind a large cloud provider's load balancer.
 
 #### Steps:
 1. Setup a mongodb instance within a container connected to the host network on the traditional port 27017 and hostname configured as `mongo`
