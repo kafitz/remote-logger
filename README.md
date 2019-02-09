@@ -15,8 +15,8 @@ from threading import Thread
 import requests
 def log_request(data):
     def _async_push(data):
-        r = requests.post('http://localhost:8000/log', json=data)
-        assert r.status_code == 200
+        r = requests.post('http://<destination.server>/log', json=data)
+        assert r.status_code == 201
 
     t = Thread(target=_async_push, args=(data,))
     t.daemon = True
